@@ -1,0 +1,116 @@
+/* Header */
+.home{
+    background: url(../images/cover2.jpg) center;
+    background-size: cover;
+    background-position: top;
+    min-height: 740px;
+}
+.darkOverplay{
+    background: #00000060;
+    min-height: 740px;
+}
+.name{
+    top: 380px;
+}
+
+/*----------
+    Main 
+----------*/
+
+/* My Bio */
+.textBio{
+    text-align: justify;
+}
+.barColor{
+    background-color: #44bd32;
+}
+
+/* Services */
+.serviceIcon{
+    color: #ffbe76;
+}
+.serviceText{
+    margin-top: -15px;
+}
+/* Portfolio */
+.btnPortfolio li{
+    list-style: none;
+    background-color: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.btnPortfolio li.active{
+    background: #03a9f4;
+    color: #fff;
+}
+.overlay{
+    transition: all .3s ease;
+    opacity: 0;
+}
+.itemBox:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.overlayLeft{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #00000040;
+}
+.itemBox:hover .overlayLeft{
+    height: 100%;
+    width: 100%;
+}
+
+/* Testimonial */
+.imgTestimonial{
+    width: 65px;
+    height: 65px;
+}
+.cardTestimonial{
+    background-color: #fff;
+}
+.dropRight{
+    height: 0;
+    width: 0;
+    border-bottom: 25px solid transparent;
+    border-right: 20px solid #fff;
+    margin-left: -15px;
+    margin-top: -170px;    
+}
+/* Blog/Medium */
+.durationMedium{
+    letter-spacing: 0.1rem;
+}
+/* Contact */
+.contactStyle{
+    color: #44bd32;
+}
+/* footer */
+.footerColor{
+    background-color: #f1f2f6;
+}
+/* Responsive */
+@media only screen and (max-width: 576px) {
+    /* My Bio */
+    .name{
+        text-align: center;
+        top: 430px;
+    }
+    .bioTitle{
+        text-align: center;
+    }
+    /* Testimonial */
+    .dropRight{
+        margin-top: -250px;
+    }
+}
